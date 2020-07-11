@@ -16,6 +16,7 @@ app.use(userRoute);
 app.use(passport.initialize());
 
 require("./config/passport")(passport);
+
 app.listen(port, () => {
   console.log("server is running at " + port);
 });
